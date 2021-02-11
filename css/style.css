@@ -28,7 +28,7 @@ header {
     background-position: center;
     height: 100vh;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */ /* this not working with sticky nav */
 }
 
 h1 {
@@ -67,17 +67,26 @@ h1 {
 
 /* NAVIGATION */
 
+nav {
+    z-index: 9999;
+}
+
 .nav-container {
     margin-left: 50px;
     margin-right: 125px;
-    height: 100px;
+    height: 90px;
 }
 
-.logo {
+.logo,
+.logo-black {
     height: 47px;
     float: left;
     margin-top: 20px;
     display: block;
+}
+
+.logo-black {
+    display: none;
 }
 
 .main-nav {
@@ -94,7 +103,7 @@ h1 {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 3px 0;
-    color: #fff;
+    color: #2b2c33;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
@@ -106,6 +115,39 @@ h1 {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #5c5c5c;
+}
+
+/* STICKY */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(231, 231, 231, 0.98);
+    box-shadow: 0 1px 5px rgb(114, 114, 114);
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 3px 0;
+    color: #2b2c33;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    border-bottom: 2px solid #5c5c5c;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-black {
+    display: block;
 }
 
 /* SECTION HYP */

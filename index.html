@@ -23,11 +23,12 @@
       <nav>
         <div class="nav-container">
           <img src="img/hyplogo.png" alt="HYP logo" class="logo" />
+          <img src="img/hyplogo-black.png" alt="HYP logo" class="logo-black" />
           <ul class="main-nav">
-            <li><a href="#">HYP</a></li>
-            <li><a href="#">Tuotteet</a></li>
-            <li><a href="#">Hinnoittelu</a></li>
-            <li><a href="#">Ota yhteyttä</a></li>
+            <li><a href="#hyp" class="js--scroll-to-hyp">HYP</a></li>
+            <li><a href="#products" class="js--scroll-to-products">Tuotteet</a></li>
+            <li><a href="#pricing" class="js--scroll-to-pricing">Hinnoittelu</a></li>
+            <li><a href="#contact" class="js--scroll-to-contact">Ota yhteyttä</a></li>
           </ul>
         </div>
       </nav>
@@ -50,7 +51,7 @@
       </div>
     </header>
 
-    <section class="section-hyp">
+    <section class="section-hyp js--section-hyp" id="hyp">
       <div class="row hyp-main">
         <h2>HYP CONSULTING</h2>
       </div>
@@ -93,7 +94,7 @@
       </div>
     </section>
 
-    <section class="section-products">
+    <section class="section-products js--section-products" id="products">
       <div class="row">
         <h4 class="heading-primary">TUOTTEEMME</h4>
         <hr>
@@ -132,7 +133,7 @@
       </div>
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing js--section-pricing" id="pricing">
       <div class="row">
         <h4 class="heading-primary">Hinnasto</h4>
         <hr>
@@ -247,14 +248,14 @@
             </div>
         </div>
     </section>
-    <section class="section-contact">
+    <section class="section-contact js--section-contact" id="contact">
         <div class="row" id="form">
             <h4 class="heading-primary">OTa meihin yhteyttä</h4>
             <hr>
         </div>
         <div class="row">
             <form method="post" action="mailer.php" class="contact-form">
-                <div class="row">
+                <!-- <div class="row">
                     <?php
                     if($_GET["success"] == 1) {
                         echo "<div class=\"form-messages success\">
@@ -267,7 +268,7 @@
                     </div>"
                     }
                     ?>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Nimi*</label>
@@ -311,5 +312,8 @@
             </form>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

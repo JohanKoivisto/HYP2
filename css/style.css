@@ -155,7 +155,7 @@ nav {
 .section-hyp {
     background-color: #f7f7f7;
     margin-bottom: 220px;
-    padding-top: 75px;
+    padding-top: 150px;
 }
 
 .hyp-main {
@@ -256,6 +256,34 @@ nav {
 .section-pricing {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: #ebebeb;
+}
+
+.pricing-headline {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    height: 70px;
+}
+
+.pricing-headline-2 {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    height: 220px;
+}
+
+.pricing-title-box {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.headline2-p {
+ font-weight: 900;
+ font-size: 40px;
 }
 
 .product-pricing {
@@ -263,7 +291,7 @@ nav {
     border-radius: 10px;
     padding: 20px;
     font-size: 16px;
-    height: 420px;
+    height: 520px;
     position: relative;
 }
 
@@ -281,6 +309,7 @@ nav {
  font-size: 11px;
  font-weight: 900;
  /* text-align: center; */
+ font-size: 25px;
 }
 
 .pricing-box img {
@@ -289,9 +318,13 @@ nav {
     border-radius: 50%;
 }
 
-.pricing-box p:first-of-type {
-    padding-top: 80px;
+.pricing-headline-2 img {
+    width: 45%;
 }
+
+/* .pricing-box p:first-of-type {
+    padding-top: 10px;
+} */
 
 
 .pricing-contact {
@@ -307,7 +340,7 @@ nav {
     margin-bottom: 20px;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #2d69af;
+    background-color: #5c5c5c;
     border-radius: 5px;
     color: #fff;
     font-weight: 700;
@@ -394,7 +427,7 @@ input[type=submit] {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #2d69af;
+    background-color: #5c5c5c;
     border-radius: 5px;
     color: #fff;
     font-weight: 700;
@@ -402,7 +435,7 @@ input[type=submit] {
 
 input[type=submit]:hover,
 input[type=submit]:active {
-   background-color: #1a4270;
+   background-color: #444444;
 }
 
 .form-messages {

@@ -124,6 +124,8 @@ nav {
     width: 100%;
     background-color: rgb(231, 231, 231, 0.98);
     box-shadow: 0 1px 5px rgb(114, 114, 114);
+    animation-name: sticky-fadein;
+    animation-duration: 0.5s;
 }
 
 .sticky .main-nav li a:link,
@@ -189,32 +191,16 @@ nav {
 
 .composition {
     position: relative;
+    text-align: left;
 }
 
 .composition__photo {
-    width: 55%;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-    border-radius: 2px;
-    position: absolute;
+    width: 20%;
     z-index: 10;
-}
-
-.composition__photo--p1 {
-    left: 0;
-    top: -20px;
-    z-index: 13;
-}
-
-.composition__photo--p2 {
-    right: 0;
-    top: 20px;
-    z-index: 11;
-}
-
-.composition__photo--p3 {
-    left: 20%;
-    top: 100px;
-    z-index: 14;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 /* PRODUCTS */
@@ -403,8 +389,17 @@ hr {
 }
 
 /* FORM */
+
 .contact-form {
-    width: 60%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container {
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
     margin: 0 auto;
 }
 
@@ -424,7 +419,7 @@ textarea {
 }
 
 input[type=submit] {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     padding: 10px 20px;
     background-color: #5c5c5c;
@@ -453,3 +448,62 @@ input[type=submit]:active {
 .error {
     background-color: rgb(252, 209, 209);
 }
+
+.input-field {
+    text-align: left;
+}
+
+.input-field input {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.input-field input[type=submit] {
+    margin: 0 auto;
+}
+
+.contact-form-avatars {
+ margin: 0 auto;
+}
+
+
+.contact-form-avatars img{
+    margin-top: 20px;
+    width: 30%;
+    opacity: 0.7;
+    border-radius: 10%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/* FOOTER */
+footer {
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #5c5c5c;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ANIMATIONS */
+
+@keyframes sticky-fadein {
+    0%   {opacity: 0;}
+    100%   {opacity: 1;}
+  }

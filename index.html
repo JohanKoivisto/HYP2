@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,72 +8,60 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>HYP - Half-Year Consulting</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>HYP - Half-year projects</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav-container">
-          <img src="img/hyplogo-black.png" alt="HYP logo" class="logo" />
-          <img src="img/hyplogo-black.png" alt="HYP logo" class="logo-black" />
+    <nav id="navbar">
+      <div class="hyp-logo">
+        <img src="img/hyplogo-black.png" alt="HYP logo" class="logo" />
+      </div>
+      <div class="topnav">
+        <div class="nav-items">
           <ul class="main-nav">
-            <li><a href="#hyp" class="js--scroll-to-hyp">HYP</a></li>
-            <!-- <li><a href="#products" class="js--scroll-to-products">Tuotteet</a></li> -->
+            <li><a href="#hyp">HYP</a></li>
+            <li><a href="#pricing">tuotteet & hinnoittelu</a></li>
+            <li><a href="#contact">Ota yhteyttä</a></li>
             <li>
-              <a href="#pricing" class="js--scroll-to-pricing"
-                >Tuotteet & Hinnoittelu</a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="js--scroll-to-contact">Ota yhteyttä</a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="dropdown">
-                  <span><img src="img/finland.png" alt="flag of finland"></span>
-                  <div class="dropdown-content">
-                  <a href="index2.html"><img src="img/english.png" alt="flag of finland"></span></a>
-                  </div>
-                </div>
-              </a>
-              
+                  <a href="index2.html"
+                    ><img src="img/english.png" alt="flag of england"
+                    class="language-select"
+                  /></a>
             </li>
           </ul>
         </div>
-      </nav>
-      <div class="hero-text-box">
-        <h1>
-          <span class="heading-primary-1">Half-Year</span>
-          <span class="heading-primary-2">Projects</span>
-        </h1>
-        <hr class="heading-hr" />
-        <div class="hero-text-box-info">
+      </div>
+    </nav>
+    <header>
+      <div class="main">
+        <div class="main-header">
+          <h1>Half-Year</h1>
+          <h1>Projects</h1>
+          <hr />
           <p>
-            Tulit juuri oikealle sinulle, mikäli haluat kehittää liiketoimintaasi, mutta et ole aivan varma, miten sen tekisit! 
-HYP -talosta löytyy asiantuntijan pika-apua, mutta myös kokenut projektin vetäjä tai konsultti haastavampaan projektiin.   
-HYP -talo satsaa toiminnan laatuun ja asiakaspalveluun. HYP-talosta löytyy kokemusta useammalta eri toimia-alalta. Tutustu tietotaitoomme ja ota yhteyttä, tehdään yhdessä muutoksia :)! 
+            Tulit juuri oikealle sinulle, mikäli haluat kehittää
+            liiketoimintaasi, mutta et ole aivan varma, miten sen tekisit! HYP
+            -talosta löytyy asiantuntijan pika-apua, mutta myös kokenut
+            projektin vetäjä tai konsultti haastavampaan projektiin. HYP -talo
+            satsaa toiminnan laatuun ja asiakaspalveluun. HYP-talosta löytyy
+            kokemusta useammalta eri toimia-alalta. Tutustu tietotaitoomme ja
+            ota yhteyttä, tehdään yhdessä muutoksia!
           </p>
         </div>
       </div>
     </header>
-
-    <section class="section-hyp js--section-hyp" id="hyp">
-      <div class="row hyp-main">
+    <section class="section-hyp" id="hyp">
+      <div class="hyp-headline">
         <h2>HYP-visio</h2>
       </div>
-      <div class="row">
-        <div class="col span-1-of-2 hyp-info-box">
+      <div class="hyp-info">
+        <div class="hyp-info-box">
           <h3>HYP-talo haluaa olla jatkuvan parantamisen edelläkävijä.</h3>
           <p>
-            HYP-talo kerää parhaat palat useasta eri projektista ja usealta eri toimialalta sekä työstää paloista uusia ideoita oman toiminnan kehittämiseksi. HYP-talo haluaa tsempata kaikkia yrityksiä jatkuvaan parantamiseen.
+            HYP-talo kerää parhaat palat useasta eri projektista ja usealta eri
+            toimialalta sekä työstää paloista uusia ideoita oman toiminnan
+            kehittämiseksi. HYP-talo haluaa tsempata kaikkia yrityksiä jatkuvaan
+            parantamiseen.
           </p>
           <h3>HYP-arvot</h3>
           <ul>
@@ -82,127 +70,76 @@ HYP -talo satsaa toiminnan laatuun ja asiakaspalveluun. HYP-talosta löytyy koke
             <li>Hedelmällinen yhteistyö</li>
           </ul>
         </div>
-        <div class="col span-1-of-2 composition">
-          <div class="composition">
-            <img
-              src="img/bar-graph.png"
-              alt="ruler and graph"
-              class="composition__photo"
-            />
-
-            <img
-              src="img/building.png"
-              alt="ruler and graph"
-              class="composition__photo"
-            />
-
-            <img
-              src="img/employee.png"
-              alt="ruler and graph"
-              class="composition__photo"
-            />
+        <div class="hyp-info-composition">
+          <div class="hyp-info-composition-1">
+            <div class="icon-row">
+              <img
+                src="img/bar-graph.png"
+                alt="ruler and graph"
+                class="composition__photo"
+              />
+            </div>
+            <div class="icon-row">
+              <img
+                src="img/building.png"
+                alt="ruler and graph"
+                class="composition__photo"
+              />
+            </div>
+            <div class="icon-row">
+              <img
+                src="img/employee.png"
+                alt="ruler and graph"
+                class="composition__photo"
+              />
+            </div>
           </div>
-          <div class="composition">
-            <img
-              src="img/clipboard.png"
-              alt="ruler and graph"
-              class="composition__photo"
-            />
-
-            <img
-              src="img/presentation.png"
-              alt="ruler and graph"
-              class="composition__photo"
-            />
-
-            <img
-              src="img/money.png"
-              alt="ruler and graph"
-              class="composition__photo"
-            />
+          <div class="hyp-info-composition-2">
+            <div class="icon-row">
+              <img
+                src="img/clipboard.png"
+                alt="ruler and graph"
+                class="composition__photo"
+              />
+            </div>
+            <div class="icon-row">
+              <img
+                src="img/presentation.png"
+                alt="ruler and graph"
+                class="composition__photo"
+              />
+            </div>
+            <div class="icon-row">
+              <img
+                src="img/money.png"
+                alt="ruler and graph"
+                class="composition__photo money-photo"
+              />
+            </div>
           </div>
-
-          <!-- <div class="composition">
-            <img
-              src="img/hyp-1.jpg"
-              alt="ruler and graph"
-              class="composition__photo composition__photo--p1"
-            />
-            <img
-              src="img/hyp-2.jpg"
-              alt="people in meeting"
-              class="composition__photo composition__photo--p2"
-            />
-            <img
-              src="img/hyp-3.jpg"
-              alt="laptop graphs"
-              class="composition__photo composition__photo--p3"
-            />
-          </div> -->
         </div>
       </div>
     </section>
-
-    <!-- <section class="section-products js--section-products" id="products">
-      <div class="row">
-        <h4 class="heading-primary">TUOTTEEMME</h4>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col span-1-of-4 product-info">
-          <h5>Projektipäällikkö, +10v kokemuksella</h5>
-          <p>
-            ”Kun tavoite on selkeä, mitä halutaan saavuttaa.” Sitoutuminen
-            puolin ja toisin vähintään 3kk. Myös 50% tuntityömäärä on
-            mahdollista.
-          </p>
-        </div>
-        <div class="col span-1-of-4 product-info">
-          <h5>Konsultti, +20v asiantuntija kokemuksella</h5>
-          <p>
-            ”Kun etsitään vinkkejä, miten asiat voitaisiin eri tavalla tai kun
-            tavoitellaan kehitystä eikä yrityksen sisältä tunnu apuja.”
-            Osa-aikainen avun tarve.
-          </p>
-        </div>
-        <div class="col span-1-of-4 product-info">
-          <h5>Kyselyt ja tutkimukset</h5>
-          <p>
-            ”Kun halutaan päätöksien tueksi dataa”. ”Kun halutaan kysyä
-            mielipiteitä tai osallistaa työntekijöitä / sidosryhmiä.”
-          </p>
-        </div>
-        <div class="col span-1-of-4 product-info">
-          <h5>Koulutukset ja esitelmät</h5>
-          <p>
-            ”Kun halutaan ulkopuolinen tuomaan vinkkejä isommalle yleisölle tai
-            kouluttamaan tiettyä asiantuntijuusaluetta tarkemmin”
-          </p>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="section-pricing js--section-pricing" id="pricing">
-      <div class="row">
-        <h4 class="heading-primary">Tuotteet & Hinnasto</h4>
+    <section class="section-pricing" id="pricing">
+      <div class="hyp-headline-secondary">
+        <h2>Tuotteet ja hinnasto</h2>
         <hr />
       </div>
-      <div class="row">
-        <div class="col span-1-of-4 product-pricing">
-          <div class="row pricing-box">
-            <div class="row pricing-headline-2">
-              <img src="img/avatar.png" alt="businessperson avatar" />
-              <div class="pricing-title-box">
-                <p>Projektipäällikkö</p>
-                <p>+10v kokemuksella</p>
-              </div>
-              <div>
-                <p class="headline2-p">90€ / hr</p>
-              </div>
-            </div>
+      <div class="pricing-options">
+        <div class="pricing-options-info">
+          <div class="pricing-options-info-avatar">
+            <img src="img/avatar.png" alt="businessperson avatar" />
           </div>
-          <hr />
-          <div class="pricing-products">
+          <div class="pricing-options-info-headline">
+            <h3>Projektipäällikkö</h3>
+            <h3>+10v kokemuksella</h3>
+            <h3>90€ / hr</h3>
+          </div>
+          <div class="pricing-options-info-hr">
+            <hr/>
+          </div>
+          <div class="pricing-options-info-price"></div>
+          <div class="pricing-options-info-description">
             <p>&#8226; Prosessin kuvaaminen / kehittäminen</p>
             <p>
               &#8226; Järjestelmän vaatimusmäärittely, testaus ja käyttöönotto (SAP, Wise ja MS Axapta)
@@ -211,26 +148,25 @@ HYP -talo satsaa toiminnan laatuun ja asiakaspalveluun. HYP-talosta löytyy koke
             <p>&#8226; Materiaalivirtojen johtaminen</p>
             <p>&#8226; hankintaprojektin johtaminen</p>
             <p>&#8226; tuotekehitysprojektin johtaminen</p>
-            <div class="pricing-contact">
-              <a class="btn-price" href="#contact">Yhteydenotto</a>
-            </div>
+          </div>
+          <div class="pricing-options-info-btn">
+            <a class="btn-price" href="#contact">Yhteydenotto</a>
           </div>
         </div>
-        <div class="col span-1-of-4 product-pricing">
-          <div class="row pricing-box">
-            <div class="row pricing-headline-2">
-              <img src="img/avatar2.png" alt="businessperson avatar" />
-              <div class="pricing-title-box">
-                <p>Konsultti</p>
-                <p>+20v asiantuntija kokemuksella</p>
-              </div>
-              <div>
-                <p class="headline2-p">90€ / hr</p>
-              </div>
-            </div>
+        <div class="pricing-options-info">
+          <div class="pricing-options-info-avatar">
+            <img src="img/avatar2.png" alt="businessperson avatar" />
           </div>
-          <hr />
-          <div class="pricing-products">
+          <div class="pricing-options-info-headline">
+            <h3>Konsultti</h3>
+            <h3>+20v asiantuntija kokemuksella</h3>
+            <h3>90€ / hr</h3>
+          </div>
+          <div class="pricing-options-info-hr">
+            <hr/>
+          </div>
+          <div class="pricing-options-info-price"></div>
+          <div class="pricing-options-info-description">
             <p>
               &#8226; Operatiivisen toiminnan prosessit ja niiden aliprosessit
             </p>
@@ -239,82 +175,81 @@ HYP -talo satsaa toiminnan laatuun ja asiakaspalveluun. HYP-talosta löytyy koke
               vientivalvonta, RoHS& REACH, ISO9001, ISO14001, toimitusketjut,
               toimittajavalinnat, alihankinta, sopimusvalmistus, DG-toimitukset
             </p>
-            <div class="pricing-contact">
-              <a class="btn-price" href="#contact">Yhteydenotto</a>
-            </div>
+          </div>
+          <div class="pricing-options-info-btn">
+            <a class="btn-price" href="#contact">Yhteydenotto</a>
           </div>
         </div>
-        <div class="col span-1-of-4 product-pricing">
-          <div class="row pricing-box">
-            <div class="row pricing-headline-2">
-              <img src="img/avatar.png" alt="businessperson avatar" />
-              <div class="pricing-title-box">
-                <p>Kyselyt ja tutkimukset</p>
-              </div>
-              <div>
-                <p class="headline2-p">90€ / hr</p>
-              </div>
-            </div>
+        <div class="pricing-options-info">
+          <div class="pricing-options-info-avatar">
+            <img src="img/avatar2.png" alt="businessperson avatar" />
           </div>
-          <hr />
-          <div class="pricing-products">
+          <div class="pricing-options-info-headline">
+            <h3>Kyselyt ja tutkimukset</h3>
+            <h3>90€ / hr</h3>
+          </div>
+          <div class="pricing-options-info-hr">
+            <hr/>
+          </div>
+          <div class="pricing-options-info-price"></div>
+          <div class="pricing-options-info-description">
             <p>&#8226; Yrityksen sisäiset kyselyt ja raportti</p>
             <p>&#8226; Yrityksen ulkopuolelle lähtevät kyselyt ja raportti</p>
             <p>&#8226; Kilpailijatutkimus</p>
             <p>&#8226; Ulkoiset kyselyt: Zef</p>
             <p>&#8226; Yrityksen sisäiset kyselyt: MS Forms</p>
-            <div class="pricing-contact">
-              <a class="btn-price" href="#contact">Yhteydenotto</a>
-            </div>
+          </div>
+          <div class="pricing-options-info-btn">
+            <a class="btn-price" href="#contact">Yhteydenotto</a>
           </div>
         </div>
-        <div class="col span-1-of-4 product-pricing">
-          <div class="row pricing-box">
-            <div class="row pricing-headline-2">
-              <img src="img/avatar2.png" alt="businessperson avatar" />
-              <div class="pricing-title-box">
-                <p>Koulutukset ja esitelmät</p>
-              </div>
-              <div>
-                <p class="headline2-p">90€ / hr</p>
-              </div>
-            </div>
+        <div class="pricing-options-info">
+          <div class="pricing-options-info-avatar">
+            <img src="img/avatar.png" alt="businessperson avatar" />
           </div>
-          <hr />
-          <div class="pricing-products">
+          <div class="pricing-options-info-headline">
+            <h3>Koulutukset ja esitelmät</h3>
+            <h3>90€ / hr</h3>
+          </div>
+          <div class="pricing-options-info-hr">
+            <hr/>
+          </div>
+          <div class="pricing-options-info-price"></div>
+          <div class="pricing-options-info-description">
             <p>&#8226; Projektin Johtaminen</p>
             <p>&#8226; Osallistava suunnittelu</p>
             <p>&#8226; Toimitusketjun hallinta</p>
-            <p>&#8226; Prosessin mallentaminen</p>
-            <div class="pricing-contact">
-              <a class="btn-price" href="#contact">Yhteydenotto</a>
-            </div>
+            <p>&#8226; Prosessin mallintaminen</p>
+          </div>
+          <div class="pricing-options-info-btn">
+            <a class="btn-price" href="#contact">Yhteydenotto</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-collab">
-      <div class="row">
-        <h4 class="heading-primary">Yhteistyössä</h4>
+    <section class="section-collab" id="collab">
+      <div class="hyp-headline-secondary center-headline">
+        <h2>Yhteistyössä</h2>
       </div>
-      <div class="row collab-row-container">
-        <div class="col span-1-of-4 collab-row">
+      <div class="partner-logos-container">
+        <div class="partner-logo">
           <img src="img/tech.png" alt="partner logo" />
         </div>
-        <div class="col span-1-of-4 collab-row">
+        <div class="partner-logo">
           <img src="img/tech.png" alt="partner logo" />
         </div>
-        <div class="col span-1-of-4 collab-row">
+        <div class="partner-logo">
           <img src="img/tech.png" alt="partner logo" />
         </div>
-        <div class="col span-1-of-4 collab-row">
+        <div class="partner-logo">
           <img src="img/tech.png" alt="partner logo" />
         </div>
       </div>
     </section>
-    <section class="section-contact js--section-contact" id="contact">
-      <div class="row" id="form">
-        <h4 class="heading-primary">Ota meihin yhteyttä</h4>
+
+    <section class="section-contact" id="contact">
+      <div class="hyp-headline-secondary">
+        <h2>Ota meihin yhteyttä</h2>
         <hr />
       </div>
       <div class="row">
@@ -377,78 +312,13 @@ HYP -talo satsaa toiminnan laatuun ja asiakaspalveluun. HYP-talosta löytyy koke
               <label for="">&nbsp;</label>
               <input type="submit" name="submit" value="Lähetä" />
             </div>
-            <!-- <div class="row">
-              <div class="col span-1-of-3">
-                <label for="name">Nimi*</label>
-              </div>
-              <div class="col span-2-of-3">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="..."
-                  required
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col span-1-of-3">
-                <label for="email">Sähköposti*</label>
-              </div>
-              <div class="col span-2-of-3">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="..."
-                  required
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col span-1-of-3">
-                <label for="phone">Puhelin</label>
-              </div>
-              <div class="col span-2-of-3">
-                <input type="tel" name="phone" id="phone" placeholder="..." />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col span-1-of-3">
-                <label for="message">Viesti*</label>
-              </div>
-              <div class="col span-2-of-3">
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="..."
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col span-1-of-3">
-                <label for="">&nbsp;</label>
-              </div>
-              <div class="col span-2-of-3">
-                <input type="submit" value="Lähetä" />
-              </div>
-            </div> -->
           </form>
         </div>
       </div>
     </section>
-
     <footer>
-          <ul class="footer-nav">
-            <li><a href="#">Copyright <script>document.write(new Date().getFullYear())</script> HYP Consulting</a></li>
-            <li><a href="#">Adress: katutie 123</a></li>
-            <li><a href="#">Phone: 123-456789</a></li>
-            <li><a href="#">Credits</a></li>
-          </ul>
+
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

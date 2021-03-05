@@ -410,6 +410,8 @@ footer {
   .nav-items ul li {
     margin-left: 2rem; }
   .hyp-logo img {
+    height: 4rem; }
+  .partner-logo img {
     height: 4rem; } }
 
 @media (max-width: 640px) {
@@ -440,7 +442,9 @@ footer {
     .pricing-options-info p {
       font-size: 120%; }
   .nav-items ul li {
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+  .partner-logo img {
+    height: 3rem; } }
 
 @media (max-width: 481px) {
   .hyp-headline-secondary h2 {
@@ -483,4 +487,6 @@ footer {
   header {
     height: 80rem; }
   .main-header {
-    padding-top: 13%; } }
+    padding-top: 13%; }
+  .partner-logo img {
+    height: 3rem; } }

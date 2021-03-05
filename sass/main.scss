@@ -558,6 +558,10 @@ footer {
   .hyp-logo img {
     height: 4rem;
   }
+
+  .partner-logo img {
+    height: 4rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -610,6 +614,10 @@ footer {
 
   .nav-items ul li{
     margin-left: 2rem;
+  }
+
+  .partner-logo img {
+    height: 3rem;
   }
 }
 
@@ -688,5 +696,9 @@ footer {
 
   .main-header {
     padding-top: 13%;
+  }
+
+  .partner-logo img {
+    height: 3rem;
   }
 }

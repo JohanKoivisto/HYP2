@@ -8,15 +8,15 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.webdesigncourse.co/omnifood/index.php?success=-1#form");
+        header("Location: http://www.halfyearprojects.com/index.php?success=-1#form");
         exit;
     }
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "c0kojo01@students.oamk.fi";
+    $recipient = "halfietj@halfyearprojects.com";
 
     // Set the email subject.
-    $subject = "New contact from $name";
+    $subject = "New contact from halfyearprojects.com: $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: http://www.webdesigncourse.co/omnifood/index.php?success=1#form");
+    header("Location: http://www.halfyearprojects.com/index.php?success=1#form");
 
 ?>
